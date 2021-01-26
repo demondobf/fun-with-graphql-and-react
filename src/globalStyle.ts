@@ -35,6 +35,14 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  h1 {
+    margin: 0;
+  }
+
+  time {
+    font-size: 14px;
+    color: gray;
+  }
 `;
 
 export default GlobalStyle;
