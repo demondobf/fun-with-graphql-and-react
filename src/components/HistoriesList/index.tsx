@@ -1,6 +1,6 @@
 import { useQuery } from '@apollo/client';
-import HistoryListItem from './HistoryListItem';
-import SPACEX_HISTORIES, { HistoryData } from 'graphql-service/spacex-histories';
+import HistoryListItem from '../HistoryListItem';
+import SPACEX_HISTORIES, { HistoryData } from 'services/graphql/spacex-histories';
 import HistoriesListContainer from './HistoriesListContainer';
 
 const HistoriesList = () => {

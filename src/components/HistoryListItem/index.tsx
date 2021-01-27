@@ -1,4 +1,4 @@
-import { History } from 'graphql-service/spacex-histories';
+import { History } from 'services/graphql/spacex-histories';
 import { formatDateTime } from 'services/format/date';
 
 import HistoryListItemContainer from './HistoryListItemContainer';

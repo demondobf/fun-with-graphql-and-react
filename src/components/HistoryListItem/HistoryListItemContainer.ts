@@ -9,7 +9,7 @@ const HistoryListItemContainer = styled.article`
 
   :hover,
   :focus {
-    box-shadow: 0 0 20px -5px hsla(0, 0%, 0%, 0.1);
+    box-shadow: 0 0 20px -5px hsla(0, 0%, 0%, 0.2);
   }
 `;
 
