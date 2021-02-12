@@ -30,18 +30,13 @@ const GlobalStyle = createGlobalStyle`
     color: var(--color-primary);
     text-decoration: none;
 
-    &:hover {
+    :hover {
       text-decoration: underline;
     }
   }
 
   h1 {
     margin: 0;
-  }
-
-  time {
-    font-size: 14px;
-    color: gray;
   }
 `;
 

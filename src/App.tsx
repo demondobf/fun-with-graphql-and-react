@@ -1,10 +1,10 @@
 import { ApolloProvider } from '@apollo/client';
 import client from 'services/graphql/client';
-import HistoriesList from 'components/HistoriesList';
+import Histories from 'components/Histories';
 
 const App = () => (
   <ApolloProvider client={client}>
-    <HistoriesList />
+    <Histories />
   </ApolloProvider>
 );
 
