@@ -7,7 +7,8 @@ export const Wrapper = styled.article`
 
   transition: box-shadow 300ms ease;
 
-  :hover {
+  :hover,
+  :focus-within {
     box-shadow: 0 0.9px 3.6px rgba(0, 0, 0, 0.017), 0 2.5px 10px rgba(0, 0, 0, 0.025),
       0 6px 24.1px rgba(0, 0, 0, 0.033), 0 20px 80px rgba(0, 0, 0, 0.05);
   }
