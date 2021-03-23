@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components/macro';
+import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
   :root {
     --color-text: hsl(0, 0%, 0%);
     --color-background: hsl(0, 0%, 100%);
@@ -22,8 +22,7 @@ const GlobalStyle = createGlobalStyle`
     color: var(--color-text);
     background-color: var(--color-background);
 
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-      'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, sans-serif;
   }
 
   a {
@@ -40,4 +39,4 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export default GlobalStyle;
+export default GlobalStyles;

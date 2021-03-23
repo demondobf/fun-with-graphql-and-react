@@ -1,13 +1,9 @@
-export const formatDateTime = (date: string) => {
-  const options: Intl.DateTimeFormatOptions = {
-    weekday: 'long',
-    year: 'numeric',
+export const formatDate = (date: string) => {
+  return new Date(date).toLocaleDateString(undefined, {
+    hour: '2-digit',
+    minute: '2-digit',
+    day: '2-digit',
     month: 'long',
-    day: 'numeric',
-    hour: 'numeric',
-    hour12: true,
-    minute: 'numeric',
-  };
-
-  return new Date(date).toLocaleDateString(undefined, options);
+    year: 'numeric',
+  });
 };

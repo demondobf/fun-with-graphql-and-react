@@ -1,12 +1,12 @@
 interface LinkProps {
-  children: React.ReactChild;
   href: string;
+  text?: string;
 }
 
-const Link = ({ children, href }: LinkProps) => {
+const Link = ({ href, text = 'See details →' }: LinkProps) => {
   return (
     <a href={href} target="_blank" rel="noopener noreferrer">
-      {children}
+      {text}
     </a>
   );
 };

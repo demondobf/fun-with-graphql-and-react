@@ -1,11 +1,10 @@
-import { ApolloProvider } from '@apollo/client';
-import client from 'services/graphql/client';
-import Histories from 'components/Histories';
+import SpacexClient from 'services/api/spacex/client';
+import Histories from 'modules/feed/components/Histories';
 
 const App = () => (
-  <ApolloProvider client={client}>
+  <SpacexClient>
     <Histories />
-  </ApolloProvider>
+  </SpacexClient>
 );
 
 export default App;

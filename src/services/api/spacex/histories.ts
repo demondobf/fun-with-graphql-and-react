@@ -1,6 +1,6 @@
 import { gql } from '@apollo/client';
 
-export type HistoryData = {
+export type HistoriesData = {
   histories: History[];
 };
 
@@ -11,10 +11,10 @@ export type History = {
   links: {
     article: string;
   };
-  event_date_utc: string;
+  date: string;
 };
 
-const SPACEX_HISTORIES = gql`
+export const GET_SPACEX_HISTORIES = gql`
   query {
     histories {
       id
@@ -23,9 +23,7 @@ const SPACEX_HISTORIES = gql`
       links {
         article
       }
-      event_date_utc
+      date: event_date_utc
     }
   }
 `;
-
-export default SPACEX_HISTORIES;

@@ -4,7 +4,6 @@ export const Wrapper = styled.article`
   padding: 1em;
   border: 1px solid #eaeaea;
   border-radius: 5px;
-
   transition: box-shadow 300ms ease;
 
   :hover,
